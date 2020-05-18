@@ -1,0 +1,14 @@
+name: TestActions
+on: [push]
+jobs:
+  build:
+   runs-on: ubuntu-latest
+   steps:
+     - id: Install_NPM
+       name: Install NPM
+       shell: sh
+       run: 'echo hello world'
+       continue-on-error: false
+       
+     - name: Complete
+       run: 'echo done'
